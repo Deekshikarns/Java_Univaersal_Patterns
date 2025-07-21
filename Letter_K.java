@@ -1,0 +1,29 @@
+package com.javabasics.universalpatterns;
+
+import java.util.Scanner;
+
+public class Letter_K {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the rows : ");
+		int n = sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				if(j==0||i+j==(n-1)-1 && i<=((n-1)/2)||i-j==((n-1)/2)-1 &&  i>=((n-1)/2))
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+
+	}
+
+}
